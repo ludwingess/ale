@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Felicitación para Ale</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            padding: 20px;
+            overflow: hidden;
+        }
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            width: 80%;
+            max-width: 800px;
+            margin: auto;
+            animation: fadeIn 2s;
+            position: relative;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .photo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .photo-container img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid #ff6f61;
+        }
+        .message {
+            font-size: 22px;
+            color: #333;
+            margin: 20px 0;
+        }
+        .button {
+            padding: 15px 30px;
+            background: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            animation: pulse 1.5s infinite;
+        }
+        .button:hover {
+            background: #d64b3a;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .confetti {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            background: url('https://media.giphy.com/media/l0HlNQ03J5JxX6lva/giphy.gif') center/cover no-repeat;
+        }
+    </style>
+    <script>
+        function printCard() {
+            let audio = document.getElementById('soundcloud-player');
+            audio.play();
+            setTimeout(() => { window.print(); }, 2000);
+        }
+    </script>
+</head>
+<body>
+    <div class="card">
+        <h1>🎉 ¡Felicidades, Ale! 🎉</h1>
+        <div class="photo-container">
+            <img src="https://scontent.fgua2-2.fna.fbcdn.net/v/t39.30808-6/461157189_10229618865828604_3269088924809224216_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=KRV2F73O_PgQ7kNvgGycn1K&_nc_oc=AdgZPgOdWM58V-WTcvub4KYyxZ9JD5wq0IRILE5kesfIm36N_2vLLGMkgbDC5qDljtgquh6o4ln27fzos41fyzgS&_nc_zt=23&_nc_ht=scontent.fgua2-2.fna&_nc_gid=AsE5D8XqRvVnOJ0dD_Kyzk9&oh=00_AYAdl4G2NM-z3RPqJcA29WUvzBSpxdQksqkpQ3MhOAyOMQ&oe=67A8CC49" alt="Hilton">
+            <img src="https://scontent.fgua2-1.fna.fbcdn.net/v/t1.6435-9/50223989_10215752044046726_4957333651990773760_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ozMeMpExCeYQ7kNvgE0tdVv&_nc_oc=Adiwv8tnIOHk-_XBJpEkonAJ8c7ZCliRNOsbLaiiQsQMLWlKtcTX-JmYRkZhZb9kWarFKuLwkQsLEsUZXabezJbL&_nc_zt=23&_nc_ht=scontent.fgua2-1.fna&_nc_gid=AWuAQhOafD02gLGTBrTvVtN&oh=00_AYD_WuwB3TryVh1JMODeV7GXmEB2XgXrHpmnU2axg_JaCQ&oe=67CA5817" alt="Ale">
+            <img src="https://scontent.fgua2-2.fna.fbcdn.net/v/t39.30808-6/465408188_10230073737040100_6486414411484577484_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MXelfCMrUUsQ7kNvgHCeIQa&_nc_oc=AdisfQ8qBv9gxsBN-dcDYkMV0CpZmh7rtmMicoXxsJXdZjZQvAnivNvEXY5HgLxGgnE7j6jDEoapYPGVSicJsK3I&_nc_zt=23&_nc_ht=scontent.fgua2-2.fna&_nc_gid=Ay4Ifvy1YTT9XXdpdDSjKKO&oh=00_AYDHWzEp5_kFENcysx6kkgeTqBqZORAoROGeYMHCTnKEMA&oe=67A8B212" alt="Alejandra">
+            <img src="https://scontent.fgua2-1.fna.fbcdn.net/v/t39.30808-6/471228483_10231026912028879_3248016817483659448_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=30n8brarFAQQ7kNvgEfExqo&_nc_oc=Adggm3k6uAqd3mnkVal9Pt_IMicdEzJCG4JfXvzzuBOI41I8Cp5vYg6fMapDIj5DiWwXH9UuM5PJuwrVReJvkiDT&_nc_zt=23&_nc_ht=scontent.fgua2-1.fna&_nc_gid=ADzcmdIbgfOvB14N7EFQwuu&oh=00_AYCjjXIvP4NvlumYlOmVTFtTyOCpidCBR1oq8KHvX1ye_w&oe=67A8C0D2" alt="Alejandro">
+        </div>
+        <p class="message">Hola Ale , deseo que este día sea tan especial como usted. que Dios la Bendiga Siempre siempre siempre, le deseo lo mejor y que siga cumpliendo muchos mas años de Vida... Recuerde que en este mundo habemos muchas personas que queremos verla feliz a usted y a todos los que usted ama Que Dios la bendiga siempre... ❤️</p>
+        <p class="message" style="font-style: italic; color: #ff6f61;">Y por cierto... ¡No se olvide de Chess! que también quiere celebrar usted jajajaj. 🐶🎉</p>
+        
+        <iframe id="soundcloud-player" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/ludwing-gomez-83908820/cancio-n-para-ale-2&auto_play=true">
+        </iframe>
+        
+        <button class="button" onclick="printCard()">🖨️ Imprimir Tarjeta</button>
+    </div>
+    <div class="confetti"></div>
+</body>
+</html>
